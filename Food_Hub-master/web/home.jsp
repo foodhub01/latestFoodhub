@@ -7,6 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%@include file="header.jsp" %>
+
  <div class="container">
   
   <div id="myCarousel" class="carousel slide" data-ride="carousel">

@@ -20,9 +20,16 @@
           border-radius: 0;
       }
       .jumbotron{
-         background-color:lightblue; 
+          font-family: serif;
+          background-color: lightblue;
       }
       
+         body {font-family: "Times New Roman", Georgia, Serif;}
+         h1,h2,h3,h4,h5,h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+        }
+
       
   </style>
   

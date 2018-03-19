@@ -17,12 +17,12 @@
   <style>
 
       .footer{
-          position: fixed;
+          
     left: 0;
    bottom: 0;
    width: 100%;
    background-color: lightblue;
-   color: white;
+   color: black;
    text-align: center;
       }
   </style>
@@ -30,7 +30,7 @@
     <body>
           <div class="footer">
         <footer class="container-fluid">
-            <p>Food_hub@copyright.reserved</p>
+            <p>Food Hub@copyright.reserved</p>
         </footer>
         </div>
     </body>

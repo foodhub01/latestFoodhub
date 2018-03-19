@@ -7,45 +7,47 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%@include file="header.jsp" %>
-<style>
-    .signup{
-        ;
-    }
-    .bg { 
-    
-    background-image: url("img/fries.jpeg");
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .modal-header, h4, .close {
+      background-color: lightseagreen;
+      color:black !important;
+      text-align: center;
+      font-size: 50px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
+  </style>
 
-    
-    height: 100%; 
-
-   
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-</style>
 <body class="bg">
+     <div class="modal-content">
+        <div class="modal-header" style="padding:35px 40px;">
+          <h4><span class="glyphicon glyphicon-user"></span> Login</h4>
+        </div>
+           <div class="modal-body" style="padding:10px 50px;">
     
-<div class="signup">
-    <center>
 <form action="signup.do" method="post">
-    Name:<input type="text" name="customername"/>
+    Name:<input class="form-control" type="text" placeholder="FullName" name="customername" required/>
     <br><br>
-    Username:<input type="text" name="username"/>
+    Username:<input class="form-control" type="text" placeholder="UserNmae" name="username"/>
     <br><br>
-    Address:<input type="text" name="address"/>
+    Address:<input class="form-control" type="text" placeholder="Full address" name="address"/>
     <br><br>
-    Email:<input type="text" name="emailid"/>
+    Email:<input class="form-control" type="text"placeholder="Email" name="emailid"/>
     <br><br>
-    Contact No:<input type="text" name="contactno"/>
+    Contact No:<input class="form-control" type="text" placeholder="Contact info" name="contactno"/>
     <br><br>
-    Birth Date:<input type="text" name="birthdate"/>
+    Birth Date:<input class="form-control" type="text" placeholder="YYYY/MM/DD" name="birthdate"/>
     <br><br>
-    Password:<input type="text" name="password"/>
+    Password:<input class="form-control" type="password" placeholder="Password" name="password"/>
     <br><br>
     <input type="submit" value="Submit"/>
     <br><br>
-</form></center>
+</form>
 </div>
+     </div>
 </body>
 <%@include file="footer.jsp" %>

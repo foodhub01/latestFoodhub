@@ -37,9 +37,9 @@ import java.util.List;
 public class TestApp {
    public static void main(String[] args){
         CustomerDAO customerDAO = new CustomerDAOImpl();
-        int count = customerDAO.addCustomer(new Customer("Vignesh","vig01","djfjcdiix","vig01@gmail.com","0908787654","1978/08/15","09897654"));
-        if(count>0)System.out.println("Record Added Successfully");
-        else System.out.println("Record Failed to get added"); 
+//        int count = customerDAO.addCustomer(new Customer("Vignesh","vig01","djfjcdiix","vig01@gmail.com","0908787654","1978/08/15","09897654"));
+//        if(count>0)System.out.println("Record Added Successfully");
+//        else System.out.println("Record Failed to get added"); 
 ////     
 //       int count=customerDAO.deleteCustomer(100001);
 //       if(count>0)System.out.println("Record Deleted Successfully");
@@ -51,10 +51,10 @@ public class TestApp {
 //         if(count>0)System.out.println("Record updated Successfully");
 //       else System.out.println("Record Failed to get updated");
 //
-//         List<Customer> customerlist = customerDAO.getAllCustomer();
-//        for(Customer cust : customerlist){
-//            System.out.println(cust.getCustomerId()+ "|" + cust.getCustomerName()+ "|" + cust.getUserName()+ "|" + cust.getEmailId()+ "|" + cust.getContactNo());
-//        }
+         List<Customer> customerlist = customerDAO.getAllCustomer();
+        for(Customer cust : customerlist){
+            System.out.println(cust.getCustomerId()+ "|" + cust.getCustomerName()+ "|" + cust.getUserName()+ "|" + cust.getEmailId()+ "|" + cust.getContactNo());
+        }
 //        Customer cust = customerDAO.getCustomerByID(100001);
 //            System.out.println(cust.getCustomerId()+ "|" + cust.getCustomerName()+ "|" + cust.getEmailId());
 //    
